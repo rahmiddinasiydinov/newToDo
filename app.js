@@ -69,7 +69,8 @@ function render(arr, parent){
         
         newCheck.addEventListener('click', ()=>{
             e.isCompleted = !e.isCompleted;
-            window.localStorage.setItem('todos', JSON.stringify(todoList))
+            window.localStorage.setItem('todos', JSON.stringify(arr));
+
         })
         newLi.appendChild(newCheck);
         newLi.appendChild(newP);
